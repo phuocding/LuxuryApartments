@@ -13,11 +13,11 @@
                 <div class="row">
                     @foreach($apartments_in_view as $item)
                         <div class="col-md-4 mb-3">
-                            <div class="card">
+                            <div class="card text-center">
                                 <div class="card-img-top">
                                     <img src="{{$item->thumbnail}}" style="width: 100%; height: 10em" alt="Apartment">
                                 </div>
-                                <div class="card-body single-home text-center">
+                                <div class="card-body single-home">
                                     <h3 class="card-title" style="color: #721c24">{{$item->name}} - {{$item->address}}</h3>
                                     <p class="card-text">{{$item->description}}</p>
                                     <h2 class="badge badge-pill badge-danger">{{$item->price}} VND/m2</h2>
