@@ -14,11 +14,15 @@
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
-        <div class="col-md-3">
-            <a class="navbar-brand" href="#"><i class="fab fa-home fa-4x"></i></a>
-            <span class="text-muted">My Sweet Home</span>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <a class="navbar-brand" href="/admin/apartment"><i class="fas fa-home fa-4x"></i></a>
+        <span class="text-muted">My Sweet Home</span>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="col-md-7 collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -37,7 +41,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-5">
             <form class="row">
                 <div class="col-md-8">
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -49,24 +53,20 @@
         </div>
     </nav>
     <div class="container-fluid row mt-2">
-        <nav class="col-md-2">
-            <div class="nav flex-column nav-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link" id="v-pills-profile-tab" href="/admin/bakery/list"
-                   aria-controls="v-pills-profile" aria-selected="false">Home</a>
-                <a class="nav-link" id="v-pills-profile-tab" href="/admin/bakery/list"
-                   aria-controls="v-pills-profile" aria-selected="false">Bakery Manager</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="/admin/category" role="tab"
-                   aria-controls="v-pills-messages" aria-selected="false">Category Manager</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="/admin/article" role="tab"
-                   aria-controls="v-pills-messages" aria-selected="false">Article Manager</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                   aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-            </div>
-        </nav>
         <main class="col-md-10">
             @section('content')
             @show
         </main>
+        <nav class="col-md-2">
+            <div class="nav flex-column nav-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link" id="v-pills-profile-tab" href="#"
+                   aria-controls="v-pills-profile" aria-selected="false">Price</a>
+                <a class="nav-link" id="v-pills-profile-tab" href="#"
+                   aria-controls="v-pills-profile" aria-selected="false">Location</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#" role="tab"
+                   aria-controls="v-pills-messages" aria-selected="false">Detail</a>
+            </div>
+        </nav>
     </div>
     <footer class="container-fluid mt-3 mb-3">
         <p class="text-center">Aptech FPT &copy; Copyright 2018</p>
