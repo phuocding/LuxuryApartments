@@ -12,13 +12,15 @@
             @if(count($apartments_in_view)>0)
                 <div class="row">
                     @foreach($apartments_in_view as $item)
-                        <div class="col-sm-4">
-                            <div class="single-home">
-                                <div class="text-center">
-                                    <img src="{{$item->thumbnail}}" style="width: 100px; height: 100px">
-                                    <h2 style="color: #005cbf">{{$item->price}} VND/m2</h2>
-                                    <h3 style="color: #721c24">{{$item->name}} - {{$item->address}}</h3>
-                                    <p>{{$item->description}}</p>
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="{{$item->thumbnail}}" style="width: 100%; height: 10em" alt="Apartment">
+                                </div>
+                                <div class="card-body single-home text-center">
+                                    <h3 class="card-title" style="color: #721c24">{{$item->name}} - {{$item->address}}</h3>
+                                    <p class="card-text">{{$item->description}}</p>
+                                    <h2 class="badge badge-pill badge-danger">{{$item->price}} VND/m2</h2>
                                 </div>
                             </div>
                         </div>

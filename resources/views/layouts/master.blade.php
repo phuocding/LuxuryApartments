@@ -14,8 +14,7 @@
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="/admin/apartment"><i class="fas fa-home fa-4x"></i></a>
-        <span class="text-muted">My Sweet Home</span>
+        <a class="navbar-brand" href="/admin/apartment"><i class="fas fa-home fa-4x"></i>My Sweet Home</a>
     </nav>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
