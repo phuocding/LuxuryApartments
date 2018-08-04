@@ -13,11 +13,12 @@
                 <table class="table table-striped">
                     <thead>
                     <tr class="row">
-                        <th class="col-md-1">{{__('message.id')}}</th>
-                        <th class="col-md-2">{{__('message.name')}}</th>
+                        <th class="col-md-1">ID</th>
+                        <th class="col-md-2">Name</th>
                         <th class="col-md-1 pr-3">Images</th>
-                        <th class="col-md-2">{{__('message.price')}}</th>
-                        <th class="col-md-2">{{__('message.description')}}</th>
+                        <th class="col-md-2">Price</th>
+                        <th class="col-md-2">Description</th>
+                        <th class="col-md-2">Detail</th>
 
                     </tr>
                     </thead>
@@ -36,6 +37,7 @@
                             </td>
                             <td class="col-md-2">{{$item->price}}</td>
                             <td class="col-md-2">{{$item->description}}</td>
+                            <td class="col-md-2">{{$item->detail}}</td>
                         </tr>
                     @endforeach
                     </tbody>
