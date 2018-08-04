@@ -10,6 +10,7 @@
             <div class="alert alert-success d-none" role="alert" id="messageSuccess"></div>
             <div class="alert alert-danger d-none" role="alert" id="messageError"></div>
             @if(count($apartments_in_view)>0)
+                <div class="row">
                     @foreach($apartments_in_view as $item)
                         <div class="col-sm-4">
                             <div class="single-home">
@@ -22,6 +23,7 @@
                             </div>
                         </div>
                     @endforeach
+                </div>
 
                 <div class="row">
 
