@@ -16,7 +16,7 @@ class ApartmentController extends Controller
     {
         $apartments = Apartment::paginate(6);
         return view('admin.apartment.list')
-            ->with('bakeries_in_view', $apartments);
+            ->with('apartments_in_view', $apartments);
     }
 
     /**
